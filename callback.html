@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connecting to SocialHub...</title>
+</head>
+<body>
+  <h3>جاري تحويل تسجيل الدخول إلى SocialHub...</h3>
+  <script>
+    // تحويل الرمز القادم من تيك توك إلى سيرفرك المحلي
+    const params = window.location.search;
+    window.location.href = "http://localhost:3000/api/auth/tiktok/callback" + params;
+  </script>
+</body>
+</html>
